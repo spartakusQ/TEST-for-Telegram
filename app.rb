@@ -1,11 +1,10 @@
-#encoding: utf-8
 require 'rubygems'
 require 'sinatra'
 require 'sinatra/reloader'
 require 'sinatra/activerecord'
 
-# добавление БД
-set :database, "sqlite3:barbershop.db"
+set :database, "sqlite3:/home/qq/myapp/TEST-for-Telegram/db/barbershop.db"
+
 
 class Client < ActiveRecord::Base
 end
